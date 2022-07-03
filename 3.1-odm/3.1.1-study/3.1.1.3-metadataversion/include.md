@@ -1,10 +1,10 @@
 ---
-description: 이전 메타데이터 버전에 대한 참조
+description: 이전 메타데이터 버전에 대한 참조 정보.
 ---
 
 # Include
 
-### **EX** :
+
 
 ```xml
 <Study OID="S.001">
@@ -29,16 +29,17 @@ description: 이전 메타데이터 버전에 대한 참조
 </Study>
 ```
 
-### **BODY**:
+### **BODY**
 
 empty
 
 
 
-### ATTRIBUTE:&#x20;
+### ATTRIBUTE
 
-* StudyOID oidref
-* MetaDataVersionOID oidref
+| **StudyOID**           | [oidref](../../datatype.md) | References the Study that provides a prior metadata version.   |   |
+| ---------------------- | --------------------------- | -------------------------------------------------------------- | - |
+| **MetaDataVersionOID** | [oidref](../../datatype.md) | References the prior MetaDataVersion (within the above Study). |   |
 
 
 

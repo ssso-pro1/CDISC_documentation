@@ -1,12 +1,10 @@
 ---
-description: >-
-  Study event definition: Baseline, Follow up + Repeating + Scheduled,
-  Unscheduled, Common
+description: '스터디 이벤트 정의. (Study event definition: Baseline, Follow up, ...)'
 ---
 
 # StudyEventDef
 
-### EX
+
 
 ```xml
 <StudyEventDef OID="SE.1" Name="Baseline (T0)" Repeating="No" Type="Common">
@@ -19,35 +17,33 @@ description: >-
 </StudyEventDef>
 ```
 
-![](<../../../../.gitbook/assets/화면 캡처 2022-06-29 210038 (2).png>)
+![Events](<../../../../.gitbook/assets/화면 캡처 2022-06-29 210038 (2).png>)
 
 ### BODY
 
-✅ **Description?**
-
-✅ **FormRef**\*
-
-✅ **Alias**\*&#x20;
+([**Description**](description.md)?, [**FormRef**](formref.md)\*, **Alias**\*)
 
 
 
 ### ATTRIBUTE
 
-* OID oid
-* Name name
-* Repeating (Yes | No)
-* Type (Scheduled | Unscheduled | Common)
-* Category text (선택사항)
+| **OID**       | [oid](../../../datatype.md)          |              |   |
+| ------------- | ------------------------------------ | ------------ | - |
+| **Name**      | [name](../../../datatype.md)         |              |   |
+| **Repeating** | (Yes \| No)                          |              |   |
+| **Type**      | (Scheduled \| Unscheduled \| Common) |              |   |
+| **Category**  | [text](../../../datatype.md)         | _(optional)_ |   |
 
 
 
 ### CONTAINED IN
 
-📁 MetaDataVersion
+📁 [**MetaDataVersion**](../)****
 
 
 
-* 연구 단계를 나타내는 것 같음 (ex. Baseline, FollowUp) 에 해당하는 주제에서 수집되는 양식
+스터디 이벤트 유형 정의. (ex. Baseline, FollowUp)&#x20;
+
 * `Repeating` 은 해당 연구 이벤트가 반복적으로 발생할 수 있다는 것을 뜻함
 * `Scheduled` '예정된 연구'에서 수집되는 일련의 양식
 * `unscheduled` '예정되지 않은 연구' 이벤트는 심각한 부작용으로 인한 조기 종료를 위해 작성된 일련의 양식과 같이 특정 주제에 대해 발생하거나 발생하지 않을 수 있는 데이터를 수집

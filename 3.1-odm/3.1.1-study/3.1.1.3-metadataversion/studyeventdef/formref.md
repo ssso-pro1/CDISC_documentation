@@ -1,10 +1,10 @@
 ---
-description: FormDef에 대한 참조 (특정 StudyEventDef 내에서 발생)
+description: FormDef 참조 (특정 StudyEventDef 내에서 해당 폼 사용한다는 뜻)
 ---
 
 # FormRef
 
-### EX
+
 
 ```xml
 <StudyEventDef OID="SE.1" Name="Baseline (T0)" Repeating="No" Type="Common">
@@ -25,32 +25,34 @@ description: FormDef에 대한 참조 (특정 StudyEventDef 내에서 발생)
 </FormDef>
 ```
 
-![](<../../../../.gitbook/assets/화면 캡처 2022-06-29 210038.png>)
+![Form 참조](<../../../../.gitbook/assets/화면 캡처 2022-06-29 210038.png>)
 
 
 
 ### BODY
 
-empty
+**empty**
 
 
 
 ### ATTRIBUTE
 
-* FormOID oidref
-* OrderNumber integer (선택)
-* Mandatory (Yes | No)
-* CollectionExceptionConditionOID oidref
+| **FormOID**                         | [oidref](../../../datatype.md)  |              | Reference to the FormDef.   |
+| ----------------------------------- | ------------------------------- | ------------ | --------------------------- |
+| **OrderNumber**                     | [integer](../../../datatype.md) | _(optional)_ |                             |
+| **Mandatory**                       | (Yes \| No)                     |              |                             |
+| **CollectionExceptionConditionOID** | [oidref](../../../datatype.md)  | _(optional)_ | Reference to a ConditionDef |
 
 
 
 ### CONTAINED IN
 
-StudyEventDef
+****[**StudyEventDef**](./)****
 
 
 
-1. 특정 StudyEventDef 내에서 발생하는 FormDef에 대한 참로 양식 유형을 식별. 단일 StudyEventDef 내의 FormRef에는 중복 FormOID 또는 OrderNumber가 없어야 함
-2. `OrderNumbers` : 양식 목록이 사용자에게 표시될 때 사용할 양식의 순서 제
-3. ConditionDef 참조 : CollectionExceptionConditionOID 속성이 제공되면 이 Form에 대한 데이터가 수집되지 않아야 함을 설명
+특정 StudyEventDef 내에서 발생하는 FormDef에 대한 참 양식 유형을 식별. 단일 StudyEventDef 내의 FormRef에는 중복 FormOID 또는 OrderNumber가 없어야 함
+
+* `OrderNumbers` : 양식 목록이 사용자에게 표시될 때 사용할 양식의 순서 제공.
+* ConditionDef 참조 : CollectionExceptionConditionOID 속성이 제공되면 이 Form에 대한 데이터가 수집되지 않아야 함을 설명
 

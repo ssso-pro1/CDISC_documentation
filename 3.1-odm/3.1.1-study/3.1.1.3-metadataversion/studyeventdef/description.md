@@ -4,7 +4,7 @@ description: 연구 메타 데이터 구성요소에 대한 free-text 상세 설
 
 # Description
 
-### EX
+
 
 ```xml
 <Description>
@@ -15,13 +15,13 @@ description: 연구 메타 데이터 구성요소에 대한 free-text 상세 설
 
 ### BODY
 
-TranslatedText
+****[**TranslatedText**](../../3.1.1.2-basicdefinitions/measurementunit/symbol/translatedtext.md)
 
 
 
 ### ATTRIBUTE
 
-None
+**None**
 
 
 
