@@ -37,9 +37,9 @@ empty
 
 ### ATTRIBUTE
 
-| **StudyOID**           | [oidref](../../datatype.md) | References the Study that provides a prior metadata version.   |   |
-| ---------------------- | --------------------------- | -------------------------------------------------------------- | - |
-| **MetaDataVersionOID** | [oidref](../../datatype.md) | References the prior MetaDataVersion (within the above Study). |   |
+| **StudyOID**           | [oidref](../../dataformat.md) | References the Study that provides a prior metadata version.   |   |
+| ---------------------- | ----------------------------- | -------------------------------------------------------------- | - |
+| **MetaDataVersionOID** | [oidref](../../dataformat.md) | References the prior MetaDataVersion (within the above Study). |   |
 
 
 

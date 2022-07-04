@@ -32,11 +32,11 @@ description: Item Group 참조.
 
 ### ATTRIBUTE
 
-| **ItemGroupOID**                    | [oidref](../../../datatype.md)  |              | Reference to the ItemGroupDef. |
-| ----------------------------------- | ------------------------------- | ------------ | ------------------------------ |
-| **OrderNumber**                     | [integer](../../../datatype.md) | _(optional)_ |                                |
-| **Mandatory**                       | (Yes \| No)                     |              |                                |
-| **CollectionExceptionConditionOID** | [oidref](../../../datatype.md)  | _(optional)_ | Reference to a ConditionDef    |
+| **ItemGroupOID**                    | [oidref](../../../dataformat.md)  |              | Reference to the ItemGroupDef. |
+| ----------------------------------- | --------------------------------- | ------------ | ------------------------------ |
+| **OrderNumber**                     | [integer](../../../dataformat.md) | _(optional)_ |                                |
+| **Mandatory**                       | (Yes \| No)                       |              |                                |
+| **CollectionExceptionConditionOID** | [oidref](../../../dataformat.md)  | _(optional)_ | Reference to a ConditionDef    |
 
 ### CONTAINED IN
 

@@ -39,16 +39,16 @@ description: >-
 
 ### ATTRIBUTE
 
-| **OID**               | [oid](../../../datatype.md)                                                                                                                                                                                                                                                                                                                              |              |   |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | - |
-| **Name**              | [name](../../../datatype.md)                                                                                                                                                                                                                                                                                                                             |              |   |
-| **DataType**          | [(text \| integer \| float \| date \| time \| datetime](../../../datatype.md) [\| string \| boolean \| double \| hexBinary \| base64Binary \| hexFloat \| base64Float \| partialDate \| partialTime \| partialDatetime \| durationDatetime \| intervalDatetime \| incompleteDatetime \| incompleteDate \| incompleteTime \| URI )](../../../datatype.md) |              |   |
-| **Length**            | [positiveInteger](../../../datatype.md) (양의 정수)                                                                                                                                                                                                                                                                                                          | _(optional)_ |   |
-| **SignificantDigits** | [nonNegativeInteger](../../../datatype.md) (음수 아닌 정수?)                                                                                                                                                                                                                                                                                                   | _(optional)_ |   |
-| **SASFieldName**      | [sasName](../../../datatype.md)                                                                                                                                                                                                                                                                                                                          | _(optional)_ |   |
-| **SDSVarName**        | [sasName](../../../datatype.md)                                                                                                                                                                                                                                                                                                                          | _(optional)_ |   |
-| **Origin**            | [text](../../../datatype.md)                                                                                                                                                                                                                                                                                                                             | _(optional)_ |   |
-| **Comment**           | [text](../../../datatype.md)                                                                                                                                                                                                                                                                                                                             | _(optional)_ |   |
+| **OID**               | [oid](../../../dataformat.md)                                                                                                                                                                                                                                                                                                                                |              |   |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | - |
+| **Name**              | [name](../../../dataformat.md)                                                                                                                                                                                                                                                                                                                               |              |   |
+| **DataType**          | [(text \| integer \| float \| date \| time \| datetime](../../../dataformat.md) [\| string \| boolean \| double \| hexBinary \| base64Binary \| hexFloat \| base64Float \| partialDate \| partialTime \| partialDatetime \| durationDatetime \| intervalDatetime \| incompleteDatetime \| incompleteDate \| incompleteTime \| URI )](../../../dataformat.md) |              |   |
+| **Length**            | [positiveInteger](../../../dataformat.md) (양의 정수)                                                                                                                                                                                                                                                                                                            | _(optional)_ |   |
+| **SignificantDigits** | [nonNegativeInteger](../../../dataformat.md) (음수 아닌 정수?)                                                                                                                                                                                                                                                                                                     | _(optional)_ |   |
+| **SASFieldName**      | [sasName](../../../dataformat.md)                                                                                                                                                                                                                                                                                                                            | _(optional)_ |   |
+| **SDSVarName**        | [sasName](../../../dataformat.md)                                                                                                                                                                                                                                                                                                                            | _(optional)_ |   |
+| **Origin**            | [text](../../../dataformat.md)                                                                                                                                                                                                                                                                                                                               | _(optional)_ |   |
+| **Comment**           | [text](../../../dataformat.md)                                                                                                                                                                                                                                                                                                                               | _(optional)_ |   |
 
 
 
@@ -72,11 +72,8 @@ ItemDef는 연구 내에서 발생할 수 있는 item 유형을 정. Item 속성
 
 
 
-> 뭔소리야..
-
-* DataType=integer인 경우 Length=N은 수신 시스템이 10N보다 작은 크기의 모든 정수 값을 처리하고 저장할 수 있어야 하는 요구 사항입니다. 더 큰 값은 거부될 수 있습니다. ???
-* DataType=float, Length=N 및 SignificantDigits=S인 경우 수신 시스템이 10-S의 배수인 10N-S 미만의 모든 숫자 값을 처리하고 저장할 수 있어야 합니다. 더 큰 값은 거부될 수 있습니다. 중간 값은 10-S의 가장 가까운 배수로 반올림될 수 있습니다. ???
-  * SignificantDigits: 0이 아닌 가장 왼쪽의 숫자로 시작하여 0이 아니거나 0이지만 정확한 것으로 간주되는 가장 오른쪽에 있는 마지막 숫자로 끝나는 숫자의 모든 숫자.
+* DataType=integer인 경우 Length=N은 수신 시스템이 10N보다 작은 크기의 모든 정수 값을 처리하고 저장할 수 있어야 하는 요구 사항입니다. 더 큰 값은 거부될 수 있습니다.
+* DataType=float, Length=N 및 SignificantDigits=S인 경우 수신 시스템이 10-S의 배수인 10N-S 미만의 모든 숫자 값을 처리하고 저장할 수 있어야 합니다. 더 큰 값은 거부될 수 있습니다. 중간 값은 10-S의 가장 가까운 배수로 반올림될 수 있습니다.
 * DataType=text인 경우 Length=N은 수신 시스템이 N보다 작거나 같은 길이의 모든 텍스트 문자열 값을 처리하고 저장할 수 있어야 한다는 요구 사항입니다. 모든 문자는 텍스트 문자열 값에 허용됩니다. Text 유형의 데이터는 ItemDataString 요소에서 전송되어야 합니다.&#x20;
 
 {% hint style="info" %}
@@ -101,7 +98,23 @@ ItemDef는 연구 내에서 발생할 수 있는 item 유형을 정. Item 속성
 정답은 ItemDef의 `SDSVarName`속성을 사용하는 것이다. SDSVarName은 비즈니스 의미로 Items에 태그를 지정하는 데 사용할 수 있는 선택적 속성이다. ODM 모델에서 가능한 모든 의미를 열거하려고 하기보다 CDISC SDTM에 정의된 변수 이름 집합에 의존하는 것이 가장 좋다. 이 목록은 임상 데이터 관리에 사용되는 핵심 변수를 포함하기 때문이다. \
 따라서 ODM 호환 XML 인스턴스를 처리하는 소프트웨어는 SDSVarName 속성의 특정 값을 사용하여 자주 사용되는 표준 변수를 식별할 수 있다. 이 속성의 사용은 SDTM 모델에 정의된 변수로 제한된다. 변수에 태그를 지정할 때 해당 변수에 대한 SDTM 정의와 일치하는 것으로 식별한다. 일반적으로 사용되는 값의 일부 목록은 다음과 같다.\
 \
-\- STUDYID(제출 내에서 고유한 연구 식별자) USUBJID(제출 내에서 고유한 연구 식별자), SUBJID(연구 내에서 고유한 주제 식별자), SITEID(연구 사이트의 고유 식별자) SEX(성별 또는 성별, 코드화된 값), VISITNUM(임상 만남 번호) VISIT(임상 만남에 대한 프로토콜 정의 설명), VISITDY (VISIT의 예정된 학습일) SDTM 변수에 대한 자세한 내용은 SDTM 사양 및 구현 가이드를 참조.\
+\- STUDYID(제출 내에서 고유한 연구 식별자)&#x20;
+
+USUBJID(제출 내에서 고유한 연구 식별자),&#x20;
+
+SUBJID(연구 내에서 고유한 주제 식별자),
+
+SITEID(연구 사이트의 고유 식별자)&#x20;
+
+SEX(성별 또는 성별, 코드화된 값),&#x20;
+
+VISITNUM(임상 만남 번호)&#x20;
+
+VISIT(임상 만남에 대한 프로토콜 정의 설명),&#x20;
+
+VISITDY (VISIT의 예정된 학습일)&#x20;
+
+SDTM 변수에 대한 자세한 내용은 SDTM 사양 및 구현 가이드를 참조.\
 \
 \
 \
@@ -110,4 +123,11 @@ ItemDef는 연구 내에서 발생할 수 있는 item 유형을 정. Item 속성
 {% endhint %}
 
 
+
+> SASVarName : SAS는 임상에서 데이터 분석 처리할 때 사용하는 프로그램 이름. 여기서 사용하 변수명이다. (규칙: 8글자 내)\
+> \
+> SDSVarName: CDASH -> 제출 시 1:1로 맵핑할 때 쓰는 변수명이다. \
+> (SASVarName이 8글자 넘어간다면 이거 대신 alias를 사용한다.)\
+> \
+> SDS: Submission Data Standards
 

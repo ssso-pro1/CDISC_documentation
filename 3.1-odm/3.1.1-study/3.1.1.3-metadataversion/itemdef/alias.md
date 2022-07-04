@@ -10,8 +10,8 @@ Empty
 
 ### ATTRIBUTE
 
-|   | **CodeListOID** | [oidref](../../../datatype.md) |   | Reference to the CodeList definition. |
-| - | --------------- | ------------------------------ | - | ------------------------------------- |
+| **CodeListOID** | [oidref](../../../dataformat.md) |   | Reference to the CodeList definition. |
+| --------------- | -------------------------------- | - | ------------------------------------- |
 
 
 

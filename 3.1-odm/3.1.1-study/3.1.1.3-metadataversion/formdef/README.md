@@ -40,10 +40,10 @@ description: 'Form 정의 (FormDefinition: Basis data, Medical history, ...)'
 
 ### ATTRIBUTE
 
-| **OID**       | [oid](../../../datatype.md)  |   |   |
-| ------------- | ---------------------------- | - | - |
-| **Name**      | [name](../../../datatype.md) |   |   |
-| **Repeating** | (Yes \| No)                  |   |   |
+| **OID**       | [oid](../../../dataformat.md)  |   |   |
+| ------------- | ------------------------------ | - | - |
+| **Name**      | [name](../../../dataformat.md) |   |   |
+| **Repeating** | (Yes \| No)                    |   |   |
 
 
 

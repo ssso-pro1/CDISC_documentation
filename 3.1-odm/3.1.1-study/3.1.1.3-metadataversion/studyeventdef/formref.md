@@ -37,11 +37,11 @@ description: FormDef 참조 (특정 StudyEventDef 내에서 해당 폼 사용한
 
 ### ATTRIBUTE
 
-| **FormOID**                         | [oidref](../../../datatype.md)  |              | Reference to the FormDef.   |
-| ----------------------------------- | ------------------------------- | ------------ | --------------------------- |
-| **OrderNumber**                     | [integer](../../../datatype.md) | _(optional)_ |                             |
-| **Mandatory**                       | (Yes \| No)                     |              |                             |
-| **CollectionExceptionConditionOID** | [oidref](../../../datatype.md)  | _(optional)_ | Reference to a ConditionDef |
+| **FormOID**                         | [oidref](../../../dataformat.md)  |              | Reference to the FormDef.   |
+| ----------------------------------- | --------------------------------- | ------------ | --------------------------- |
+| **OrderNumber**                     | [integer](../../../dataformat.md) | _(optional)_ |                             |
+| **Mandatory**                       | (Yes \| No)                       |              |                             |
+| **CollectionExceptionConditionOID** | [oidref](../../../dataformat.md)  | _(optional)_ | Reference to a ConditionDef |
 
 
 

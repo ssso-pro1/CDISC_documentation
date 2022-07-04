@@ -17,7 +17,7 @@
 </MethodDef>
 ```
 
-![Items 참조](<../../../.gitbook/assets/createform (1).png>)
+![Items 참조](<../../../.gitbook/assets/createform (1) (1).png>)
 
 
 
@@ -29,11 +29,11 @@
 
 ### ATTRIBUTE
 
-|          |                                                                        |   |   |
-| -------- | ---------------------------------------------------------------------- | - | - |
-| OID      | [oid](../../datatype.md)                                               |   |   |
-| **Name** | [name](../../datatype.md)                                              |   |   |
-| **Type** | [(Computation \| Imputation \| Transpose \| Other)](../../datatype.md) |   |   |
+|          |                                                                          |   |   |
+| -------- | ------------------------------------------------------------------------ | - | - |
+| OID      | [oid](../../dataformat.md)                                               |   |   |
+| **Name** | [name](../../dataformat.md)                                              |   |   |
+| **Type** | [(Computation \| Imputation \| Transpose \| Other)](../../dataformat.md) |   |   |
 
 
 

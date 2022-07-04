@@ -27,12 +27,12 @@ description: '스터디 이벤트 정의. (Study event definition: Baseline, Fol
 
 ### ATTRIBUTE
 
-| **OID**       | [oid](../../../datatype.md)          |              |   |
+| **OID**       | [oid](../../../dataformat.md)        |              |   |
 | ------------- | ------------------------------------ | ------------ | - |
-| **Name**      | [name](../../../datatype.md)         |              |   |
+| **Name**      | [name](../../../dataformat.md)       |              |   |
 | **Repeating** | (Yes \| No)                          |              |   |
 | **Type**      | (Scheduled \| Unscheduled \| Common) |              |   |
-| **Category**  | [text](../../../datatype.md)         | _(optional)_ |   |
+| **Category**  | [text](../../../dataformat.md)       | _(optional)_ |   |
 
 
 

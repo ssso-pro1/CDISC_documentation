@@ -1,7 +1,7 @@
 # Table of contents
 
 * [3.1 ODM](README.md)
-  * [DataType](3.1-odm/datatype.md)
+  * [DataFormat](3.1-odm/dataformat.md)
   * [3.1.1 Study](3.1-odm/3.1.1-study/README.md)
     * [📂 3.1.1.1 GlobalVariables](3.1-odm/3.1.1-study/3.1.1.1-globalvariables.md)
     * [📁 3.1.1.2 BasicDefinitions](3.1-odm/3.1.1-study/3.1.1.2-basicdefinitions/README.md)
@@ -32,4 +32,5 @@
         * [CodeListItem](3.1-odm/3.1.1-study/3.1.1.3-metadataversion/codelist/codelistitem.md)
       * [ArchieveLayout](3.1-odm/3.1.1-study/3.1.1.3-metadataversion/archievelayout.md)
       * [MethodDef](3.1-odm/3.1.1-study/3.1.1.3-metadataversion/methoddef.md)
-      * [ConditionDef](3.1-odm/3.1.1-study/3.1.1.3-metadataversion/conditiondef.md)
+      * [ConditionDef](3.1-odm/3.1.1-study/3.1.1.3-metadataversion/conditiondef/README.md)
+        * [FormalExpression](3.1-odm/3.1.1-study/3.1.1.3-metadataversion/conditiondef/formalexpression.md)

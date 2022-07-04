@@ -24,11 +24,11 @@ description: StudyEventDef를 참조.
 
 ### ATTRIBUTE
 
-| **StudyEventOID**                   | [oidref](../../../datatype.md)  |              | Reference to the StudyEventDef. |
-| ----------------------------------- | ------------------------------- | ------------ | ------------------------------- |
-| **OrderNumber**                     | [integer](../../../datatype.md) | _(optional)_ |                                 |
-| **Mandatory**                       | (Yes \| No)                     |              |                                 |
-| **CollectionExceptionConditionOID** | [oidref](../../../datatype.md)  | _(optional)_ | Reference to a ConditionDef     |
+| **StudyEventOID**                   | [oidref](../../../dataformat.md)  |              | Reference to the StudyEventDef. |
+| ----------------------------------- | --------------------------------- | ------------ | ------------------------------- |
+| **OrderNumber**                     | [integer](../../../dataformat.md) | _(optional)_ |                                 |
+| **Mandatory**                       | (Yes \| No)                       |              |                                 |
+| **CollectionExceptionConditionOID** | [oidref](../../../dataformat.md)  | _(optional)_ | Reference to a ConditionDef     |
 
 
 
