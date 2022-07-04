@@ -54,7 +54,7 @@ description: ItemGroupDef 내의 ItemDef 참조. Item 유형을 식별.
 
 * 단일 ItemGroupDef 내의 ItemRef에는 중복된 `ItemOID` 또는 `OrderNumber`가 없어야 함. `OrderNumbers`는 사용자에게 제공 시 사용할 Items (Item Group 내)에 대한 순서를 제공.&#x20;
 * `Mandatory`는 포함하는 아이템 그룹의 인스턴스에 대한 임상 데이터가 이러한 유형의 아이템 인스턴스 없이는 불완전할 것임을 나타냄. 즉, Yes 이면 반드시 있어야하는 항목임을 나타냄.
-* `KeySequence`(있는 경우)는 이 item이 포함하는 <mark style="background-color:red;">item group의 키임</mark>을 나타냄. 또한 키에 대한 순서를 제공. ??
+* `KeySequence`(있는 경우)는 이 item이 포함하는 item group의 키임을 나타냄. 또한 키에 대한 순서를 제공. ?? (keysequence: 유일한 key 값이라 -> OID랑 다른 점..?)
 * `MethodOID`는 이 item의 값을 파생하는 데 사용되는 **** [**MethodDef**](../methoddef.md)를 참조.
 * `Role`은 이 데이터 item의 역할을 설명하는 름을 제공.\
   `Role`이 표준 용어로 정의되면 `RoleCodeListOID`를 사용하여 Role 속성 값을 가져오는 전체 세트 역할을 정의하는 [**CodeList** ](../codelist/)를  참조할 수 있음. \
