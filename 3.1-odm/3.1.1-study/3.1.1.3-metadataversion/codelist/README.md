@@ -25,18 +25,18 @@ description: Item에 대해 허용되는 개별 값 집합을 정의
 
 ### BODY
 
-(**Description**?, (**CodeListItem**+ | **EnumeratedItem**+ | **ExternalCodeList**), **Alias**\*)
+([**Description**](../studyeventdef/description.md)?, ([**CodeListItem**](codelistitem.md)+ | **EnumeratedItem**+ | **ExternalCodeList**), [**Alias**](../itemdef/alias.md)\*)
 
 
 
 ### ATTRIBUTE
 
-|                   |                                       |              |   |
-| ----------------- | ------------------------------------- | ------------ | - |
-| **OID**           | oid                                   |              |   |
-| **Name**          | name                                  |              |   |
-| **DataType**      | (integer \| float \| text \| string ) |              |   |
-| **SASFormatName** | sasFormat                             | _(optional)_ |   |
+|                   |                                                                 |              |   |
+| ----------------- | --------------------------------------------------------------- | ------------ | - |
+| **OID**           | [oid](../../../dataformat.md)                                   |              |   |
+| **Name**          | [name](../../../dataformat.md)                                  |              |   |
+| **DataType**      | [(integer \| float \| text \| string )](../../../dataformat.md) |              |   |
+| **SASFormatName** | [sasFormat](../../../dataformat.md)                             | _(optional)_ |   |
 
 
 
