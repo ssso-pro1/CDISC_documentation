@@ -30,7 +30,7 @@ description: >-
 
 ### BODY
 
-([**Description**](../studyeventdef/description.md)?, **Question**?, **ExternalQuestion**?, [**MeasurementUnitRef**](measurementunitref.md)\*, [**RangeCheck**](rangecheck/)\*, [**CodeListRef**](codelistref.md)?, **Role\* **_**Deprecated**_, [**Alias**](alias.md)\*)
+([**Description**](../studyeventdef/description.md)?, [**Question**](question.md)?, [**ExternalQuestion**](externalquestion.md)?, [**MeasurementUnitRef**](measurementunitref.md)\*, [**RangeCheck**](rangecheck/)\*, [**CodeListRef**](codelistref.md)?, **Role\* **_**Deprecated**_, [**Alias**](alias.md)\*)
 
 * `Question` 요소에는 종이나 화면에 item 데이터를 보여줘야할 때 사용자에게 표시되는 텍스트가 포함됨. ExternalQuestion 요소는 동일한 작업을 수행하지만 외부에서 정의된 질문을 참조함. 둘 다 있는 경우 일관성이 있어야 함.
 * `MeasurementUnitRefs`는 이 유형의 item의 측정 단위이며, 숫자 항목만 측정 단위를 가질 수 있음. MeasurementUnitRef가 하나만 있는 경우 이 유형의 모든 항목은 기본적으로 이 측정 단위를 사용함.
@@ -131,3 +131,4 @@ SDTM 변수에 대한 자세한 내용은 SDTM 사양 및 구현 가이드를 �
 > \
 > SDS: Submission Data Standards
 
+> 값이 12786.5678 일 때 length = 9, SignificantDigits = 4 이다.
